@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>P-T Database Query Formulator for CCC</title>
+		
+		<style>
+			html {
+				background-color: darkgray;
+			}
+			
+			header {
+				background-color: lightgray;
+				border-style: solid;
+				border-width: medium;
+				border-top-color: gray;
+				border-bottom-color: gray;
+				border-left-color: white;
+				border-right-color: white;
+				text-align: center;
+			}
+			
+			body>h1 {
+				background-color: green;
+				text-align: center;
+				color: white;
+			}
+			
+			body>h2 {
+				color: red;
+				text-align: center;
+			}
+			
+			body>form {
+				text-align: center;
+				color: black;
+			}
+			
+			body>div {
+				background-color: orange;
+				color: black;
+			}
+			
+			table {
+				border: solid 1pt black;
+			}
+			
+			td {
+				border: solid 1pt black;
+			}
+			
+			th {
+				border: solid 1pt black;
+			}
+		</style>
+		
+		<header>
+			<h1>P-T Database Query Formulator for CCC</h1>
+		</header>
+	</head>
+	
+	<body>
+		<h1>Welcome!</h1>
+		
+		<h2>Please enter your query in English. I'm listening!</h2>
+		
+		<form action="processQuery.php" method="post">
+			Query: <input type="text" name="query">
+			<input type="submit">
+		</form>
+		
+		<br><br>
+		
+		<div>
+			<p><b>Database schema (case insensitive)</b><br><br></p>
+			
+			<table>
+				<tr>
+					<th>Entity</th>
+					<th>Attribute</th>
+				</tr>
+				
+				<tr>
+					<td rowspan="6">CLIENT(S)</td>
+					<td>CLIENT ID(S)</td>
+				</tr>
+				<tr><td>ACCOUNT NUMBER(S)</td></tr>
+				<tr><td>EXPIRATION DATE(S)</td></tr>
+				<tr><td>CREDIT(S)</td></tr>
+				<tr><td>DEBT(S)</td></tr>
+				<tr><td>BALANCE(S)</td></tr>
+				
+				<tr>
+					<td rowspan="6">COMPANY<br>(COMPANIES)</td>
+					<td>COMPANY ID(S)</td>
+				</tr>
+				<tr><td>ACCOUNT NUMBER(S)</td></tr>
+				<tr><td>EXPIRATION DATE(S)</td></tr>
+				<tr><td>CREDIT(S)</td></tr>
+				<tr><td>DEBT(S)</td></tr>
+				<tr><td>BALANCE(S)</td></tr>
+				
+				<tr>
+					<td rowspan="2">EMPLOYEE(S)</td>
+					<td>EMPLOYEE ID(S)</td>
+				</tr>
+				<tr><td>COMPANY ID(S)</td></tr>
+
+				<tr>
+					<td rowspan="8">MERCHANT(S)</td>
+					<td>MERCHANT ID(S)</td>
+				</tr>
+				<tr><td>ACCOUNT NUMBER(S)</td></tr>
+				<tr><td>EXPIRATION DATE(S)</td></tr>
+				<tr><td>CREDIT(S)</td></tr>
+				<tr><td>DEBT(S)</td></tr>
+				<tr><td>BALANCE(S)</td></tr>
+				<tr><td>COMMISSION(S)</td></tr>
+				<tr><td>TOTAL PROFIT(S)</td></tr>
+				
+				<tr>
+					<td rowspan="8">TRANSACTION(S)</td>
+					<td>TRANSACTION ID(S)</td>
+				</tr>
+				<tr><td>TRANSACTION DATE(S)</td></tr>
+				<tr><td>TRANSACTION SUM(S)</td></tr>
+				<tr><td>TRANSACTION TYPE(S)</td></tr>
+				<tr><td>CLIENT NAME(S)</td></tr>
+				<tr><td>MERCHANT ID(S)</td></tr>
+				<tr><td>RECEPTION TYPE(S)</td><tr>
+			</table>
+		</div>
+	</body>
+</html>

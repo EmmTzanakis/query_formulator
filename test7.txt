@@ -1,0 +1,1 @@
+Show merchant ids credits and debts merchants debts are not 0 and credits are greater than 100 or expiration dates are not 2020-01-01
