@@ -54,4 +54,5 @@ the following list: show, return, retrieve, get.
 Then the name of the entity's attribute should be entered
 which will be the object of choice. If we wish to
 declare quantity the corresponding quotient should be declared
-at this point before the feature.
+at this point before the feature.  
+If all is done properly a screen like tha following one should dispaly the results
