@@ -8,8 +8,9 @@ in the XAMPP htdocs folder.
 -Start Apache web server and mysql from XAMPP app.  
 -In the sql server create a database named "ccc" that will be used
 for the testing of this project and initialise it with a few entries.  
--Open a new browser tab and type "127.0.0.1/index.html".
+-Open a new browser tab and type "127.0.0.1/index.html".  
 This should open the following screen.  
+https://github.com/EmmTzanakis/query_formulator/blob/master/main_menu.png  
 -Fill the bracket with the query in natural language to see how it will
 be formulated in sql by programm and then will run on the database 
 you previously created.  
